@@ -1,0 +1,33 @@
+@import url("text-align: start; transition-property: opacity, transform; font-family: &quot;Playwrite_DK_Loopet variant0&quot;, Tofu; font-weight: 300; font-style: normal; font-stretch: normal; font-optical-sizing: auto; line-height: initial; opacity: 1; transition-duration: 350ms;");
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: rgb(255, 255, 120);
+    font-family: 'Playwrite Danmark Loopet', cursive;
+    overflow: hidden;
+}
+.container{
+    z-index: 10;
+    position: relative;
+}
+
+@keyframes float {
+    0% {
+    transform: translateY(0)
+    }
+    100% {
+        transform: translateY(-100vh);
+    }
+    
+}
+.shape {
+    position: absolute;
+    bottom: -50px;
+    animation: float linear infinite;
+    pointer-events: none;
+    z-index: 1;
+}
